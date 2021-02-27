@@ -8,4 +8,146 @@
  Version:      1.0.0
 */
 
-/*****Add any custom CSS below this line*****/
+/********************* Add any custom CSS below this line *********************/
+
+/**************************** Global Header Styles ****************************/
+/******************************************************************************/
+
+/*** Global Header Section ***/
+
+/* Header Section Design Styles */
+.et_pb_section_0_tb_header.et_pb_section {
+  background-color: #1E272D;
+  padding: 0;
+}
+
+.et_pb_section_1_tb_header.et_pb_section {
+  padding: 0;
+  background-color: #1E272D;
+}
+
+.et_pb_section_1_tb_header {
+  height: 96px;
+}
+
+ /* Header Section Advanced Styles */
+.et_pb_section_0_tb_header {
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  bottom: auto;
+  left: 0px;
+  right: auto;
+}
+
+/*** Global Header Row ***/
+
+/* Header Row Padding */
+.et_pb_row_0_tb_header.et_pb_row {
+  padding: 10px 0;
+}
+
+/*** Global Header Menu Module ***/
+
+/* Header Menu Background */
+.et_pb_menu_0_tb_header.et_pb_menu {
+  background-color: transparent;
+}
+
+/* Header Menu Text */
+.et_pb_menu_0_tb_header.et_pb_menu ul li a {
+  font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  transition: color 300ms ease 0ms;
+}
+
+/* Header Menu Text Active Link */
+.et_pb_menu_0_tb_header.et_pb_menu ul li.current-menu-item a {
+  color: #5B80E9 !important;
+}
+
+/* Header Menu Text Hover Color */
+.et_pb_menu_0_tb_header.et_pb_menu ul li:hover>a {
+  color: #5B80E9 !important;
+}
+
+.et_pb_menu_0_tb_header.et_pb_menu nav>ul>li>a:hover {
+  opacity: 1;
+}
+
+/* Header Menu Text Alignment */
+.et_pb_menu .et_pb_menu__wrap {
+  justify-content: flex-end;
+}
+
+/* Header Dropdown Menu Line Color */
+.et_pb_menu_0_tb_header.et_pb_menu .nav li ul {
+  border-color: transparent;
+}
+
+/* Header Dropdown Menu Text Color */
+.et_pb_menu_0_tb_header.et_pb_menu .nav li ul.sub-menu a {
+  color: #1E272D !important;
+}
+
+/* Header Dropdown Menu Hover Text Color */
+.et_pb_menu_0_tb_header.et_pb_menu .nav li ul.sub-menu a:hover {
+  color: #5B80E9!important;
+}
+
+/* Header Dropdown Menu Active Link Color */
+.et_pb_menu_0_tb_header.et_pb_menu .nav li ul.sub-menu li.current-menu-item a {
+  color: #5B80E9!important;
+}
+
+/* Header Hamburger Menu Icon Color */
+.et_pb_menu_0_tb_header .mobile_nav .mobile_menu_bar:before {
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+/* Header Logo Max Height */
+.et_pb_menu_0_tb_header .et_pb_menu_inner_container>.et_pb_menu__logo-wrap .et_pb_menu__logo img {
+  max-height: 40px;
+}
+
+/*** Global Header Button Module ***/
+
+/* Header Button Alignment */
+.et_pb_button_module_wrapper {
+  text-align: right;
+  margin-top: 20px;
+}
+
+/* Header Button Styles */
+.et_pb_section .et_pb_button_0_tb_header {
+    color: #FFFFFF!important;
+    font-size: 14px;
+    border-width: 0!important;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif!important;
+    font-weight: 700!important;
+    text-transform: uppercase!important;
+    background-color: #5B80E9;
+}
+
+/* Header Button Hover Styles */
+#page-container .et_pb_section .et_pb_button_0_tb_header:hover {
+  background-image: initial;
+  background-color: #5376d6;
+}
+
+#page-container .et_pb_section .et_pb_button_0_tb_header:hover:after {
+  left: auto;
+  margin-left: 0.3em;
+  opacity: 1;
+}
+
+/* Header Button Box Shadow */
+.et_pb_button_0_tb_header {
+  box-shadow: 0px 12px 18px -6px rgb(0 0 0 / 30%);
+}
