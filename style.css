@@ -22,8 +22,9 @@
 }
 
 .et_pb_section_1_tb_header.et_pb_section {
-  padding: 0;
-  background-color: #1E272D;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #1E272D !important;
 }
 
 .et_pb_section_1_tb_header {
@@ -32,12 +33,12 @@
 
  /* Header Section Advanced Styles */
 .et_pb_section_0_tb_header {
-  z-index: 1;
   position: fixed;
-  top: 0px;
+  top: 0;
   bottom: auto;
-  left: 0px;
+  left: 0;
   right: auto;
+  z-index: 1;
 }
 
 /*** Global Header Row ***/
@@ -150,4 +151,28 @@
 /* Header Button Box Shadow */
 .et_pb_button_0_tb_header {
   box-shadow: 0px 12px 18px -6px rgb(0 0 0 / 30%);
+}
+
+/* Tablet and mobile devices */
+@media only screen and (max-width: 980px) {
+
+  /* Hide menu */
+  .et_pb_menu .et_pb_menu__menu {
+      display: none;
+  }
+
+  /* Hide column containing CTA button */
+  .et_pb_column_1_tb_header {
+    display: none !important;
+  }
+
+  /* Remaining column width adjust */
+  .et_pb_column {
+    width: 100%;
+  }
+
+  /* Remove row gutter width (margin) between columns */
+  .et_pb_gutters1 .et_pb_column, .et_pb_gutters1.et_pb_row .et_pb_column {
+    margin-bottom: 0;
+  }
 }
