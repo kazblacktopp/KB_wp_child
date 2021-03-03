@@ -13,7 +13,7 @@
 /**************************** Global Header Styles ****************************/
 /******************************************************************************/
 
-/*** Global Header Section ***/
+/**** Global Header Section ****/
 
 /* Header Section Design Styles */
 .et_pb_section_0_tb_header.et_pb_section {
@@ -41,14 +41,14 @@
   z-index: 1;
 }
 
-/*** Global Header Row ***/
+/**** Global Header Row ****/
 
 /* Header Row Padding */
 .et_pb_row_0_tb_header.et_pb_row {
   padding: 10px 0;
 }
 
-/*** Global Header Menu Module ***/
+/**** Global Header Menu Module ****/
 
 /* Header Menu Background */
 .et_pb_menu_0_tb_header.et_pb_menu {
@@ -70,7 +70,7 @@
   color: #5B80E9 !important;
 }
 
-/* Header Menu Text Hover Color */
+/* Header Menu Text Hover */
 .et_pb_menu_0_tb_header.et_pb_menu ul li:hover>a {
   color: #5B80E9 !important;
 }
@@ -115,7 +115,7 @@
   max-height: 40px;
 }
 
-/*** Global Header Button Module ***/
+/**** Global Header Button Module ****/
 
 /* Header Button Alignment */
 .et_pb_button_module_wrapper {
@@ -174,5 +174,28 @@
   /* Remove row gutter width (margin) between columns */
   .et_pb_gutters1 .et_pb_column, .et_pb_gutters1.et_pb_row .et_pb_column {
     margin-bottom: 0;
+  }
+}
+
+/**************************** Global Footer Styles ****************************/
+/******************************************************************************/
+
+/**** Global Footer Image Module ****/
+
+/** Footer Image Module Design Styles **/
+
+/* Image Module Alignment */
+.et_pb_image_0_tb_footer {
+  text-align: left;
+}
+
+/* Image Module Sizing */
+.et_pb_image_0_tb_footer .et_pb_image_wrap img {
+  max-height: 40px;
+}
+
+@media only screen and (max-width: 980px) {
+  div.et_pb_image_0_tb_footer {
+    text-align: center;
   }
 }
