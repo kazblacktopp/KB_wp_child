@@ -1,5 +1,5 @@
 /*
- Theme Name:   KB Child Theme
+ Theme Name:   Karen Blacktopp Child Theme
  Theme URI:    https://karenblacktopp.com
  Description:  Child Theme for Divi by Karen Blacktopp
  Author:       Karen Blacktopp
@@ -9,6 +9,38 @@
 */
 
 /********************* Add any custom CSS below this line *********************/
+
+/******************************** Global Styles ********************************/
+/******************************************************************************/
+
+/**** Global Heading Style Presets ****/
+
+/**** Global Text Style Presets ****/
+
+/* .et_pb_text */
+.kb_global_text_styles {
+  font-family: 'PT Serif', Georgia, "Times New Roman", serif;
+  color: rgba(30, 39, 45, 0.55) !important;
+  font-size: 16px;
+}
+
+/* et_pb_text h2 */
+.kb_global_text_styles h2 {
+  font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #1E272D !important;
+}
+
+/* et_pb_text h3 */
+.kb_global_text_styles h3 {
+  font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #5B80E9 !important;
+  letter-spacing: 1px;
+}
 
 /**************************** Global Header Styles ****************************/
 /******************************************************************************/
@@ -153,10 +185,95 @@
   box-shadow: 0px 12px 18px -6px rgb(0 0 0 / 30%);
 }
 
-/* Tablet and mobile devices */
+/**************************** Global Footer Styles ****************************/
+/******************************************************************************/
+
+/**** Global Footer Image Module ****/
+
+/** Image Module Design Styles **/
+
+/* Image Module Alignment */
+.et_pb_image_0_tb_footer {
+  text-align: left;
+}
+
+/* Image Module Sizing */
+.et_pb_image_0_tb_footer .et_pb_image_wrap img {
+  max-height: 40px;
+}
+
+/**** Global Footer Text Module ****/
+
+/** Text Module Design Styles **/
+
+/* Text Module Font Size */
+.footer_text_blurb, .footer_text_copyright {
+  font-size: 14px;
+}
+
+.footer_text_blurb {
+  margin-bottom: 10px!important;
+}
+
+/* ul.et_pb_social_media_follow_0_tb_footer li a.icon */
+.kb_social_icons li a.icon {
+  background-color: #1E2728;
+  transition: background-color 300ms ease 0ms, background-image 300ms ease 0ms;
+  border-radius: 30px 30px 30px 30px;
+  padding: 10px;
+}
+
+/* ul.et_pb_social_media_follow_0_tb_footer li:hover a.icon */
+.kb_social_icons li:hover a.icon {
+  background-image: initial;
+  background-color: #5B80E9;
+}
+
+/* ul.et_pb_social_media_follow_0_tb_footer li a.icon::before */
+.kb_social_icons li a.icon::before {
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 28px;
+  height: 28px;
+  width: 28px;
+}
+
+/***************************** Responsive Styles *****************************/
+/******************************************************************************/
+
+/*** Responsive Styles Large Desktop And Above ***/
+@media only screen and (min-width: 1405px) {
+
+}
+
+/*** Responsive Styles Standard Desktop Only ***/
+@media only screen and (min-width: 1100px) and (max-width: 1405px) {
+
+}
+
+/*** Responsive Styles Tablet And Below ***/
 @media only screen and (max-width: 980px) {
 
-  /* Hide menu */
+  /**** Global Text Style Presets ****/
+
+  /* .et_pb_text */
+  .kb_global_text_styles {
+    font-size: 14px;
+  }
+
+  /* .et_pb_text h2 */
+  .kb_global_text_styles h2 {
+    font-size: 32px;
+  }
+
+  /* .et_pb_text h3 */
+  .kb_global_text_styles h3 {
+    font-size: 13px;
+  }
+
+  /*** Global Header Section ***/
+
+  /* Hide menu in global header */
   .et_pb_menu .et_pb_menu__menu {
       display: none;
   }
@@ -175,27 +292,56 @@
   .et_pb_gutters1 .et_pb_column, .et_pb_gutters1.et_pb_row .et_pb_column {
     margin-bottom: 0;
   }
-}
 
-/**************************** Global Footer Styles ****************************/
-/******************************************************************************/
+  /*** Global Footer Section ***/
 
-/**** Global Footer Image Module ****/
-
-/** Footer Image Module Design Styles **/
-
-/* Image Module Alignment */
-.et_pb_image_0_tb_footer {
-  text-align: left;
-}
-
-/* Image Module Sizing */
-.et_pb_image_0_tb_footer .et_pb_image_wrap img {
-  max-height: 40px;
-}
-
-@media only screen and (max-width: 980px) {
   div.et_pb_image_0_tb_footer {
     text-align: center;
   }
+
+  /* Text Module Font Size */
+  .et_pb_text_0_tb_footer, .et_pb_text_1_tb_footer {
+    font-size: 13px;
+  }
+
+  /* .et_pb_text_2_tb_footer, ul.et_pb_social_media_follow_0_tb_footer */
+  .kb_text_social, .kb_social_icons {
+    text-align: center;
+  }
+}
+
+/*** Responsive Styles Tablet Only ***/
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+
+}
+
+/*** Responsive Styles Smartphone Only ***/
+@media only screen and (max-width: 767px) {
+
+  /**** Global Text Style Presets ****/
+
+  /* .et_pb_text */
+  .kb_global_text_styles {
+    font-size: 12px;
+  }
+
+  /* .et_pb_text h2 */
+  .kb_global_text_styles h2 {
+    font-size: 26px;
+  }
+
+  /* .et_pb_text h3 */
+  .kb_global_text_styles h3 {
+    font-size: 12px;
+  }
+
+  /* Text Module Font Size */
+  div.et_pb_text_0_tb_footer, div.et_pb_text_1_tb_footer {
+    font-size: 11px;
+  }
+}
+
+/*** Responsive Styles Smartphone Portrait ***/
+@media only screen and (max-width: 479px) {
+
 }
