@@ -13,7 +13,7 @@
 /**************************** Global Style Presets ****************************/
 /******************************************************************************/
 
-/**** Global Text Style Presets ****/
+/**** Global Text Module Presets ****/
 
 /* Divi class: .et_pb_text */
 .kb_global_text_styles {
@@ -45,30 +45,10 @@
 
 /**** Global Header Section ****/
 
-/* Header Section Design Styles */
-.et_pb_section_0_tb_header.et_pb_section {
+/* Global Header Section Settings - Divi class: .et_pb_section_0_tb_header */
+.kb_global_header_section {
   background-color: #1E272D;
   padding: 0;
-}
-
-.et_pb_section_1_tb_header.et_pb_section {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  background-color: #1E272D !important;
-}
-
-.et_pb_section_1_tb_header {
-  height: 96px;
-}
-
- /* Header Section Advanced Styles */
-.et_pb_section_0_tb_header {
-  position: fixed;
-  top: 0;
-  bottom: auto;
-  left: 0;
-  right: auto;
-  z-index: 1;
 }
 
 /**** Global Header Row ****/
@@ -269,7 +249,7 @@
     font-size: 13px;
   }
 
-  /*** Global Header Section ***/
+  /**** Global Header Section ****/
 
   /* Hide menu in global header */
   .et_pb_menu .et_pb_menu__menu {
@@ -291,7 +271,7 @@
     margin-bottom: 0;
   }
 
-  /*** Global Footer Section ***/
+  /**** Global Footer Section ****/
 
   div.et_pb_image_0_tb_footer {
     text-align: center;
@@ -332,6 +312,8 @@
   .kb_global_text_styles h3 {
     font-size: 12px;
   }
+
+  /**** Global Footer Section ****/
 
   /* Text Module Font Size */
   div.et_pb_text_0_tb_footer, div.et_pb_text_1_tb_footer {
