@@ -96,35 +96,36 @@
   justify-content: flex-end;
 }
 
-/* Header Dropdown Menu Line Color */
-.et_pb_menu_0_tb_header.et_pb_menu .nav li ul {
+/* Divi class: .et_pb_menu_0_tb_header .nav li .sub-menu */
+.kb_global_header_menu .nav li .sub-menu {
+  background-color: #FFFFFF;
   border-color: transparent;
 }
 
-/* Header Dropdown Menu Text Color */
-.et_pb_menu_0_tb_header.et_pb_menu .nav li ul.sub-menu a {
+/* Divi class: .et_pb_menu_0_tb_header ul.nav li ul.sub-menu a */
+.kb_global_header_menu ul.nav li ul.sub-menu a {
   color: #1E272D !important;
 }
 
-/* Header Dropdown Menu Hover Text Color */
-.et_pb_menu_0_tb_header.et_pb_menu .nav li ul.sub-menu a:hover {
+/* Divi class: .et_pb_menu_0_tb_header .nav li ul.sub-menu a:hover */
+.kb_global_header_menu .nav li ul.sub-menu a:hover {
   color: #5B80E9!important;
   background-color: transparent;
 }
 
-/* Header Dropdown Menu Active Link Color */
-.et_pb_menu_0_tb_header.et_pb_menu .nav li ul.sub-menu li.current-menu-item a {
+/* Divi class: .et_pb_menu_0_tb_header .nav li ul.sub-menu .current-menu-item a */
+.kb_global_header_menu .nav li ul.sub-menu .current-menu-item a {
   color: #5B80E9!important;
 }
 
-/* Header Hamburger Menu Icon Color */
-.et_pb_menu_0_tb_header .mobile_nav .mobile_menu_bar:before {
+/* Divi class: .et_pb_menu_0_tb_header .mobile_nav .mobile_menu_bar:before */
+.kb_global_header_menu .mobile_nav .mobile_menu_bar:before {
   font-size: 40px;
   color: #FFFFFF;
 }
 
-/* Header Logo Max Height */
-.et_pb_menu_0_tb_header .et_pb_menu_inner_container>.et_pb_menu__logo-wrap .et_pb_menu__logo img {
+/* Divi class: .et_pb_menu_0_tb_header .et_pb_menu__logo img */
+.kb_global_header_menu .et_pb_menu__logo img {
   max-height: 40px;
 }
 
