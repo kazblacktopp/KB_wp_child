@@ -45,28 +45,29 @@
 
 /**** Global Header Section ****/
 
-/* Global Header Section Settings - Divi class: .et_pb_section_0_tb_header */
+/* Divi class: .et_pb_section_0_tb_header */
 .kb_global_header_section {
   background-color: #1E272D;
   padding: 0;
+  position: fixed;
+  top: 0px;
+  bottom: auto;
+  left: 0px;
+  right: auto;
+  z-index: 1;
 }
 
 /**** Global Header Row ****/
 
-/* Header Row Padding */
-.et_pb_row_0_tb_header.et_pb_row {
+/* Divi class: .et_pb_row_0_tb_header */
+.kb_global_header_row {
   padding: 10px 0;
 }
 
 /**** Global Header Menu Module ****/
 
-/* Header Menu Background */
-.et_pb_menu_0_tb_header.et_pb_menu {
-  background-color: transparent;
-}
-
-/* Header Menu Text */
-.et_pb_menu_0_tb_header.et_pb_menu ul li a {
+/* Divi class: .et_pb_menu_0_tb_header ul li a */
+.kb_global_header_menu ul li a {
   font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -75,22 +76,23 @@
   transition: color 300ms ease 0ms;
 }
 
-/* Header Menu Text Active Link */
-.et_pb_menu_0_tb_header.et_pb_menu ul li.current-menu-item a {
+/* Divi class: .et_pb_menu_0_tb_header.et_pb_menu ul li.current-menu-item a */
+.kb_global_header_row .kb_global_header_menu ul li.current-menu-item a {
   color: #5B80E9 !important;
 }
 
-/* Header Menu Text Hover */
-.et_pb_menu_0_tb_header.et_pb_menu ul li:hover>a {
+/* Divi class: .et_pb_menu_0_tb_header.et_pb_menu ul li:hover>a */
+.kb_global_header_row .kb_global_header_menu ul li:hover>a {
   color: #5B80E9 !important;
 }
 
-.et_pb_menu_0_tb_header.et_pb_menu nav>ul>li>a:hover {
-  opacity: 1;
+/* Divi class: .et_pb_menu_0_tb_header nav>ul>li>a:hover */
+ .kb_global_header_menu nav>ul>li>a:hover {
+  opacity: 0.8;
 }
 
-/* Header Menu Text Alignment */
-.et_pb_menu .et_pb_menu__wrap {
+/* Divi class: .et_pb_menu .et_pb_menu__wrap */
+.kb_global_header_menu .et_pb_menu__wrap {
   justify-content: flex-end;
 }
 
@@ -107,6 +109,7 @@
 /* Header Dropdown Menu Hover Text Color */
 .et_pb_menu_0_tb_header.et_pb_menu .nav li ul.sub-menu a:hover {
   color: #5B80E9!important;
+  background-color: transparent;
 }
 
 /* Header Dropdown Menu Active Link Color */
@@ -161,6 +164,15 @@
 /* Header Button Box Shadow */
 .et_pb_button_0_tb_header {
   box-shadow: 0px 12px 18px -6px rgb(0 0 0 / 30%);
+}
+
+/**** Global Hidden Section ****/
+
+/* Divi class: .et_pb_section_1_tb_header */
+.kb_global_hidden_section {
+  background-color: #1E272D;
+  padding: 0;
+  height: 96px;
 }
 
 /**************************** Global Footer Styles ****************************/
@@ -219,14 +231,18 @@
 /***************************** Responsive Styles *****************************/
 /******************************************************************************/
 
-/*** Responsive Styles Large Desktop And Above ***/
-@media only screen and (min-width: 1405px) {
+/*** Responsive Styles Standard Desktop and Above ***/
+@media only screen and (min-width: 1350px) {
 
-}
+  /* .et_pb_row_0_tb_header.et_pb_row */
+  .kb_global_header_section .kb_global_header_row {
+    padding: 10px 0;
+  }
 
-/*** Responsive Styles Standard Desktop Only ***/
-@media only screen and (min-width: 1100px) and (max-width: 1405px) {
-
+  /* .et_pb_section_1_tb_header */
+  .kb_global_hidden_section {
+    padding: 0 !important;
+  }
 }
 
 /*** Responsive Styles Tablet And Below ***/
@@ -288,11 +304,6 @@
   }
 }
 
-/*** Responsive Styles Tablet Only ***/
-@media only screen and (min-width: 768px) and (max-width: 980px) {
-
-}
-
 /*** Responsive Styles Smartphone Only ***/
 @media only screen and (max-width: 767px) {
 
@@ -319,9 +330,4 @@
   div.et_pb_text_0_tb_footer, div.et_pb_text_1_tb_footer {
     font-size: 11px;
   }
-}
-
-/*** Responsive Styles Smartphone Portrait ***/
-@media only screen and (max-width: 479px) {
-
 }
