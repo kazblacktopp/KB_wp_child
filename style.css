@@ -181,13 +181,13 @@
 
 /** Image Module Design Styles **/
 
-/* Image Module Alignment */
-.et_pb_image_0_tb_footer {
+/* Divi class: .et_pb_image_0_tb_footer */
+.kb_global_footer_logo_image {
   text-align: left;
 }
 
-/* Image Module Sizing */
-.et_pb_image_0_tb_footer .et_pb_image_wrap img {
+/* Divi class: .et_pb_image_0_tb_footer img */
+.kb_global_footer_logo_image img {
   max-height: 40px;
 }
 
@@ -195,30 +195,33 @@
 
 /** Text Module Design Styles **/
 
-/* Text Module Font Size */
-.footer_text_blurb, .footer_text_copyright {
+/* Divi class: .et_pb_text_0_tb_footer, .et_pb_text_1_tb_footer */
+.kb_footer_text_blurb, .kb_footer_text_copyright {
   font-size: 14px;
 }
 
-.footer_text_blurb {
+/* Divi class: .et_pb_text_0_tb_footer */
+.kb_footer_text_blurb {
   margin-bottom: 10px!important;
 }
 
-/* ul.et_pb_social_media_follow_0_tb_footer li a.icon */
+/* Divi class: ul.et_pb_social_media_follow_0_tb_footer li a.icon */
 .kb_social_icons li a.icon {
   background-color: #1E2728;
   transition: background-color 300ms ease 0ms, background-image 300ms ease 0ms;
   border-radius: 30px 30px 30px 30px;
   padding: 10px;
+  height: 28px;
+  width: 28px;
 }
 
-/* ul.et_pb_social_media_follow_0_tb_footer li:hover a.icon */
+/* Divi class: ul.et_pb_social_media_follow_0_tb_footer li:hover a.icon */
 .kb_social_icons li:hover a.icon {
   background-image: initial;
   background-color: #5B80E9;
 }
 
-/* ul.et_pb_social_media_follow_0_tb_footer li a.icon::before */
+/* Divi class: ul.et_pb_social_media_follow_0_tb_footer li a.icon::before */
 .kb_social_icons li a.icon::before {
   color: #FFFFFF;
   font-size: 14px;
