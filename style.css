@@ -131,40 +131,38 @@
 
 /**** Global Header Button Module ****/
 
-/* Header Button Alignment */
-.et_pb_button_module_wrapper {
+/* Divi class: .et_pb_button_0_tb_header_wrapper */
+.kb_global_header_column_1>div {
   text-align: right;
   margin-top: 20px;
 }
 
-/* Header Button Styles */
-.et_pb_section .et_pb_button_0_tb_header {
-    color: #FFFFFF!important;
-    font-size: 14px;
-    border-width: 0!important;
-    border-radius: 30px;
-    letter-spacing: 1px;
-    font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif!important;
-    font-weight: 700!important;
-    text-transform: uppercase!important;
-    background-color: #5B80E9;
+/* Divi class: .et_pb_button_0_tb_header */
+.kb_global_header_button {
+  color: #FFFFFF;
+  font-size: 14px;
+  border-width: 0 !important;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #5B80E9;
+  box-shadow: 0px 12px 18px -6px rgb(0 0 0 / 30%);
+  transition: all 300ms ease 0ms;
 }
 
-/* Header Button Hover Styles */
-#page-container .et_pb_section .et_pb_button_0_tb_header:hover {
+/* Divi class: .et_pb_button.et_pb_button_0_tb_header:hover */
+.kb_global_header_column_1 .kb_global_header_button:hover {
   background-image: initial;
   background-color: #5376d6;
 }
 
-#page-container .et_pb_section .et_pb_button_0_tb_header:hover:after {
+/* Divi class: .et_pb_button.et_pb_button_0_tb_header:hover:after */
+.kb_global_header_button:hover:after {
   left: auto;
   margin-left: 0.3em;
   opacity: 1;
-}
-
-/* Header Button Box Shadow */
-.et_pb_button_0_tb_header {
-  box-shadow: 0px 12px 18px -6px rgb(0 0 0 / 30%);
 }
 
 /**** Global Hidden Section ****/
