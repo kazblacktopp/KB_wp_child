@@ -236,12 +236,12 @@
 /*** Responsive Styles Standard Desktop and Above ***/
 @media only screen and (min-width: 1350px) {
 
-  /* .et_pb_row_0_tb_header.et_pb_row */
+  /* Divi class: .et_pb_row_0_tb_header.et_pb_row */
   .kb_global_header_section .kb_global_header_row {
     padding: 10px 0;
   }
 
-  /* .et_pb_section_1_tb_header */
+  /* Divi class: .et_pb_section_1_tb_header */
   .kb_global_hidden_section {
     padding: 0 !important;
   }
@@ -250,57 +250,47 @@
 /*** Responsive Styles Tablet And Below ***/
 @media only screen and (max-width: 980px) {
 
-  /**** Global Text Style Presets ****/
-
-  /* .et_pb_text */
+  /* Divi class: .et_pb_text */
   .kb_global_text_styles {
     font-size: 14px;
   }
 
-  /* .et_pb_text h2 */
+  /* Divi class: .et_pb_text h2 */
   .kb_global_text_styles h2 {
     font-size: 32px;
   }
 
-  /* .et_pb_text h3 */
+  /* Divi class: .et_pb_text h3 */
   .kb_global_text_styles h3 {
     font-size: 13px;
   }
 
-  /**** Global Header Section ****/
-
-  /* Hide menu in global header */
-  .et_pb_menu .et_pb_menu__menu {
+  /* Divi class: .et_pb_menu .et_pb_menu__menu */
+  .kb_global_header_menu .et_pb_menu__menu {
       display: none;
   }
 
-  /* Hide column containing CTA button */
-  .et_pb_column_1_tb_header {
-    display: none !important;
+  /* Divi class: .et_pb_column_1_tb_header */
+  .kb_global_header_column_1 {
+    display: none;
   }
 
-  /* Remaining column width adjust */
-  .et_pb_column {
+  /* Divi class: .et_pb_column */
+  .kb_global_header_column_0 {
     width: 100%;
   }
 
-  /* Remove row gutter width (margin) between columns */
-  .et_pb_gutters1 .et_pb_column, .et_pb_gutters1.et_pb_row .et_pb_column {
-    margin-bottom: 0;
-  }
-
-  /**** Global Footer Section ****/
-
-  div.et_pb_image_0_tb_footer {
+  /* Divi class: .et_pb_image_0_tb_footer */
+  .kb_global_footer_logo_image {
     text-align: center;
   }
 
-  /* Text Module Font Size */
-  .et_pb_text_0_tb_footer, .et_pb_text_1_tb_footer {
+  /* Divi class: .et_pb_text_0_tb_footer, .et_pb_text_1_tb_footer */
+  .kb_footer_text_blurb, .kb_footer_text_copyright {
     font-size: 13px;
   }
 
-  /* .et_pb_text_2_tb_footer, ul.et_pb_social_media_follow_0_tb_footer */
+  /* Divi class: .et_pb_text_2_tb_footer, ul.et_pb_social_media_follow_0_tb_footer */
   .kb_text_social, .kb_social_icons {
     text-align: center;
   }
@@ -309,27 +299,23 @@
 /*** Responsive Styles Smartphone Only ***/
 @media only screen and (max-width: 767px) {
 
-  /**** Global Text Style Presets ****/
-
-  /* .et_pb_text */
+  /* Divi class:  .et_pb_text */
   .kb_global_text_styles {
     font-size: 12px;
   }
 
-  /* .et_pb_text h2 */
+  /* Divi class: .et_pb_text h2 */
   .kb_global_text_styles h2 {
     font-size: 26px;
   }
 
-  /* .et_pb_text h3 */
+  /* Divi class: .et_pb_text h3 */
   .kb_global_text_styles h3 {
     font-size: 12px;
   }
 
-  /**** Global Footer Section ****/
-
-  /* Text Module Font Size */
-  div.et_pb_text_0_tb_footer, div.et_pb_text_1_tb_footer {
+  /* Divi class: .et_pb_text_0_tb_footer, .et_pb_text_1_tb_footer */
+  .kb_footer_text_blurb, .kb_footer_text_copyright {
     font-size: 11px;
   }
 }
