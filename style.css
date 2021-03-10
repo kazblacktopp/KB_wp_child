@@ -288,6 +288,7 @@
   /* Divi class: .et_pb_text_0_tb_footer, .et_pb_text_1_tb_footer */
   .kb_footer_text_blurb, .kb_footer_text_copyright {
     font-size: 13px;
+    text-align: center;
   }
 
   /* Divi class: .et_pb_text_2_tb_footer, ul.et_pb_social_media_follow_0_tb_footer */
@@ -317,5 +318,6 @@
   /* Divi class: .et_pb_text_0_tb_footer, .et_pb_text_1_tb_footer */
   .kb_footer_text_blurb, .kb_footer_text_copyright {
     font-size: 11px;
+    text-align: center;
   }
 }
